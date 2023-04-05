@@ -23,10 +23,10 @@ VALUE_TYPE_NAMES = {
 
 APPLICABLE_TO_NAMES = {
     sly.TagApplicableTo.ALL: "Videos and objects"
-    if g.project_info.type == sly.ProjectType.VIDEOS
+    if g.project_info.type == str(sly.ProjectType.VIDEOS)
     else "Images and objects",
     sly.TagApplicableTo.IMAGES_ONLY: "Videos only"
-    if g.project_info.type == sly.ProjectType.VIDEOS
+    if g.project_info.type == str(sly.ProjectType.VIDEOS)
     else "Images only",
     sly.TagApplicableTo.OBJECTS_ONLY: "Objects only",
 }
