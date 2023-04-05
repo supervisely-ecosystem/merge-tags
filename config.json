@@ -1,0 +1,21 @@
+{
+    "name": "Merge Tags",
+    "description": "Merge Tags in videos or images project",
+    "version": "2.0.0",
+    "headless": false,
+    "entrypoint": "python -m uvicorn src.main:app --host 0.0.0.0 --port 8000",
+    "categories": [ 
+        "images",
+        "videos",
+        "annotation transformation",
+        "data operations"
+    ],
+    "context_menu": {
+        "target": [
+          "images_project",
+          "videos_project"
+        ],
+        "context_category": "Transform"
+    }
+  }
+  
