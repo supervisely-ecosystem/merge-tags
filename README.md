@@ -38,7 +38,7 @@ App contains 3 sections: information about input project, information about outp
 
 You can select several tag metas to merge with. Default option is no selection and means that tags will be copied without modification to a new project unless they are selected to merge with other tag. Dropdown lists only contain tag metas with same value type.
 
-![merge-tags-screenshot](https://user-images.githubusercontent.com/61844772/230071348-8f8a049e-b334-41dd-be83-37753323ffea.png)
+![merge-tags-screenshot](https://user-images.githubusercontent.com/61844772/230072269-f631331c-5f2f-4953-bede-fb7205ed6d08.png)
 
 ### Step 4: Press RUN button and wait
 
