@@ -10,6 +10,9 @@
         "annotation transformation",
         "data operations"
     ],
+    "icon": "https://user-images.githubusercontent.com/115161827/230241456-9d228c3d-4aa0-4fa6-9160-4485b62b4964.png",
+    "icon_cover": true,
+    "poster": "https://user-images.githubusercontent.com/119248312/230250816-f63ac10f-26b6-4ea0-b0a4-21c5f58a7156.jpg",
     "context_menu": {
         "target": [
           "images_project",
@@ -17,8 +20,5 @@
         ],
         "context_category": "Transform"
     }
-     "icon": "https://user-images.githubusercontent.com/115161827/230241456-9d228c3d-4aa0-4fa6-9160-4485b62b4964.png",
-     "icon_cover": true,
-     "poster": "https://user-images.githubusercontent.com/119248312/230250816-f63ac10f-26b6-4ea0-b0a4-21c5f58a7156.jpg"
   }
   
