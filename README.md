@@ -32,7 +32,7 @@ Keep in mind that this project does not affect the original project or its meta,
 1. Run the application from the context menu of a project
 
 2. Wait until the app is started
-Once app is started, new task appear in workspace tasks. Wait for the message `Application is started ...` and then press `Open` button.
+Once app is started, new task appear in workspace tasks. Wait for the message `Application is started ...` and then press `Open` button
 
 3. Define mapping
 
@@ -54,7 +54,7 @@ Even if app is finished, you can always use it as a history: open it from tasks 
 
 ## Example Screenshots
 
-### Map one or several tags to the existing one
+### Map one or several tags to the existing one:
 <div align="center" markdown> 
 
 ### Before
@@ -67,7 +67,7 @@ Even if app is finished, you can always use it as a history: open it from tasks 
 
 </div>
 
-### Map one or several tags to a new one
+### Map one or several tags to a new one:
 <div align="center" markdown> 
 
 ### Before
