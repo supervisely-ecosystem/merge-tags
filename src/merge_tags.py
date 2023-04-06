@@ -109,7 +109,7 @@ def update_video_tags(
             sorted_tags = sorted(frame_tags, key=lambda tag: tag.frame_range[0])
             merged_tags = sorted_tags[:1]
             for tag in sorted_tags[1:]:
-                if tag.frame_range[0] <= merged_tags[-1].frame_range[1]:
+                if tag.frame_range[0] - merged_tags[-1].frame_range[1] <= 1:
                     merged_tags[-1].frame_range[1] = max(
                         merged_tags[-1].frame_range[1], tag.frame_range[1]
                     )
