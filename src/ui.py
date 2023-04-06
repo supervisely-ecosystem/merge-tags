@@ -130,7 +130,7 @@ def get_row(tag_meta):
 
 
 input_card = Card(title="Input", content=ProjectThumbnail(g.project_info))
-run_button = Button("Run")
+run_button = Button("Run", icon="zmdi zmdi-play")
 progress = Progress()
 progress.hide()
 result_thumbnail = ProjectThumbnail()
