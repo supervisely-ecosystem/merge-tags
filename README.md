@@ -25,11 +25,11 @@ Sometimes tags management can be tricky and time-consuming. This App helps to me
 1. **Map one or several tags to the existing one**: all tags will be converted to destination tag meta and the source tags will be removed from project. Follow steps from (<a href="#How-To-Run">How To Run</a> section) 
 2. **Map one or several tags to a new one**: first, you have to create new tag meta (on `Project`->`Tags` page) and then follow steps from (<a href="#How-To-Run">How To Run</a> section).
 
-Keep in mind that this project does not affect the original project or its meta, and only creates a new one with the modified tags.
+Keep in mind that this project does not affect the original project or its meta, and only creates a new one with the modified tags. Also, this app works both with images and videos project modalities.
 
 ## How To Run
 
-1. Run the application from the context menu of a project
+1. Run the application from the context menu of an images or videos project
 
 2. Wait until the app is started
 Once app is started, new task appear in workspace tasks. Wait for the message `Application is started ...` and then press `Open` button
