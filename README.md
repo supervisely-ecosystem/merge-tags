@@ -55,15 +55,27 @@ Even if app is finished, you can always use it as a history: open it from tasks 
 ## Example Screenshots
 
 ### Map one or several tags to the existing one
+<div align="center" markdown> 
 
-Before  |  After
-:-------------------------:|:-----------------------------------:
-<img src="https://user-images.githubusercontent.com/119248312/230250570-1c7d01ba-37d3-4005-8dca-1e4d054d6a9f.jpg" style="max-height: 850px; width: auto;"/>  |  <img src="https://user-images.githubusercontent.com/119248312/230250572-5017114f-a354-4ed6-a172-1d6754dfdfef.jpg" style="max-height: 850px; width: auto;"/>
+### Before
+  
+<img src="https://user-images.githubusercontent.com/119248312/230250570-1c7d01ba-37d3-4005-8dca-1e4d054d6a9f.jpg" />
 
+### After
+  
+<img src="https://user-images.githubusercontent.com/119248312/230250572-5017114f-a354-4ed6-a172-1d6754dfdfef.jpg" />
+
+</div>
 
 ### Map one or several tags to a new one
+<div align="center" markdown> 
 
-Before  |  After
-:-------------------------:|:-----------------------------------:
-<img src="https://user-images.githubusercontent.com/119248312/230250565-ad68de7b-c9dd-4a05-a347-6d8d56deb77c.jpg" style="max-height: 850px; width: auto;"/>  |  <img src="https://user-images.githubusercontent.com/119248312/230250574-67c85992-3110-48f6-a3f7-bb2ff51c81ba.jpg" style="max-height: 850px; width: auto;"/>
+### Before
 
+<img src="https://user-images.githubusercontent.com/119248312/230250565-ad68de7b-c9dd-4a05-a347-6d8d56deb77c.jpg" />
+
+### After
+
+<img src="https://user-images.githubusercontent.com/119248312/230250574-67c85992-3110-48f6-a3f7-bb2ff51c81ba.jpg" />
+
+</div>
