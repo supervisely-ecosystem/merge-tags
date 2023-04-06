@@ -6,7 +6,6 @@ from supervisely.app.widgets import (
     Button,
     Flexbox,
     Select,
-    Field,
     Progress,
 )
 import src.globals as g
@@ -32,17 +31,71 @@ APPLICABLE_TO_NAMES = {
 }
 
 selects = {}
+selects_values = {}
+selects_items = {}
 
+@sly.timeit
+def disable_items(name):
+    for select_name, items in selects_items.items():
+        disable_idxs = [i for i, item in enumerate(items) if item.value == name]
+        for i in disable_idxs:
+            selects[select_name].disable_item(i)
+
+@sly.timeit
+def enable_items(name):
+    for select_name, items in selects_items.items():
+        enable_idxs = [i for i, item in enumerate(items) if item.value == name]
+        for i in enable_idxs:
+            selects[select_name].enable_item(i)
+
+def get_select(tag_meta):
+    items = [
+        Select.Item(tm.name, tm.name)
+        for tm in g.tag_metas
+        if tm.name != tag_meta.name and tm.value_type == tag_meta.value_type
+    ]
+    select = Select(items=items, multiple=True)
+
+    selects_items[tag_meta.name] = items
+    selects_values[tag_meta.name] = set()
+    
+    @select.value_changed
+    @sly.timeit
+    def select_value_changed(values):
+        if type(values) is not list:
+            return      
+        
+        values_set = set(values)
+        
+        to_disable = []
+        to_enable = []
+        for name in values:
+            if name not in selects_values[tag_meta.name]:
+                to_disable.append(name)
+        for name in selects_values[tag_meta.name]:
+            if name not in values_set:
+                to_enable.append(name)
+        for name in to_disable:
+            selects[name].disable()
+            disable_items(name)
+        for name in to_enable:
+            selects[name].enable()
+            enable_items(name)
+        
+        if len(values_set) > 0:
+            disable_items(tag_meta.name)
+        else:
+            enable_items(tag_meta.name)
+        
+        for i in range(len(items)):
+            select.enable_item(i)
+
+        selects_values[tag_meta.name] = values_set
+        select.set_value(list(values_set))
+
+    return select
 
 def get_row(tag_meta):
-    def get_select(tag_meta):
-        items = [
-            Select.Item(tm.name, tm.name)
-            for tm in g.tag_metas
-            if tm.name != tag_meta.name and tm.value_type == tag_meta.value_type
-        ]
-        return Select(items=items, multiple=True)
-
     possible_values = tag_meta.possible_values
     if possible_values is None:
         possible_values = []
