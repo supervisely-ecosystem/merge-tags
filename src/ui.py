@@ -198,4 +198,5 @@ def run():
         g.api.task.set_output_project(
             g.task_id, g.dst_project_info.id, g.dst_project_info.name
         )
-        app.shutdown()
+    
+    sly.app.show_dialog("Stop", "Please, stop the app manually.")
