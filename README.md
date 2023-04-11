@@ -48,9 +48,11 @@ The progress bar will appear in `Output` section. Also you can monitor progress 
 
 App creates new project that will appear in `Output` section. Result project name is the original name with the "(merged tags)" suffix at the end.
 
-5. No need to stop the app manually: it shuts down automatically
+5. Stop the app manually
 
 Even if app is finished, you can always use it as a history: open it from tasks list in `Read Only` mode to view all information about a task: Input project, mapping settings and Output project. 
+
+<img src="https://user-images.githubusercontent.com/61844772/231217416-1d8f9363-db5c-460d-9095-780e650a84a9.png" />
 
 ## Example Screenshots
 
