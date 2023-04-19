@@ -199,4 +199,4 @@ def run():
             g.task_id, g.dst_project_info.id, g.dst_project_info.name
         )
     
-    sly.app.show_dialog("Stop", "Please, stop the app manually.")
+    app.stop()
