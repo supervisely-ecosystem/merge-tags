@@ -1,25 +1,25 @@
 {
-    "name": "Merge Tags",
-    "description": "Merge Tags in videos or images project",
-    "version": "2.0.0",
-    "headless": false,
-    "entrypoint": "python -m uvicorn src.main:app --host 0.0.0.0 --port 8000",
-    "categories": [ 
-        "images",
-        "videos",
-        "annotation transformation",
-        "data operations"
+  "name": "Merge Tags",
+  "description": "Merge Tags in videos or images project",
+  "version": "2.0.0",
+  "headless": false,
+  "entrypoint": "python -m uvicorn src.main:app --host 0.0.0.0 --port 8000",
+  "categories": [
+    "images",
+    "videos",
+    "annotation transformation",
+    "data operations"
+  ],
+  "docker_image": "supervisely/data-operations:6.73.483",
+  "icon": "https://user-images.githubusercontent.com/115161827/230241456-9d228c3d-4aa0-4fa6-9160-4485b62b4964.png",
+  "icon_cover": true,
+  "poster": "https://user-images.githubusercontent.com/119248312/230250816-f63ac10f-26b6-4ea0-b0a4-21c5f58a7156.jpg",
+  "context_menu": {
+    "target": [
+      "images_project",
+      "videos_project"
     ],
-    "docker_image": "supervisely/data-operations:0.0.5",
-    "icon": "https://user-images.githubusercontent.com/115161827/230241456-9d228c3d-4aa0-4fa6-9160-4485b62b4964.png",
-    "icon_cover": true,
-    "poster": "https://user-images.githubusercontent.com/119248312/230250816-f63ac10f-26b6-4ea0-b0a4-21c5f58a7156.jpg",
-    "context_menu": {
-        "target": [
-          "images_project",
-          "videos_project"
-        ],
-        "context_category": "Transform"
-    }
-  }
-  
+    "context_category": "Transform"
+  },
+  "min_instance_version": "6.15.35"
+}
