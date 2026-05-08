@@ -18,6 +18,7 @@ VALUE_TYPE_NAMES = {
     sly.TagValueType.ANY_STRING: "Any String",
     sly.TagValueType.ANY_NUMBER: "Any Number",
     sly.TagValueType.ONEOF_STRING: "One of String",
+    sly.TagValueType.DATE: "Date",
 }
 
 APPLICABLE_TO_NAMES = {
